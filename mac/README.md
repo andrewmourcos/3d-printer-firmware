@@ -1,5 +1,5 @@
 # 3D Printer Software (MacOS)
-** Disclaimer: this is a collection of open source software and I am not the original creator. These are simply copies that I use on my specific machine (minor changes to deprecated version).
+** Disclaimer: this is a collection of open source software and I am not the original creator. These are simply copies that I use on my specific machine (minor changes to deprecated versions).
 
 
 ```
@@ -69,4 +69,4 @@ You should now see `grbl` in the dropdown menu of `Sketch > Include Library`
 6. Plug in the Arduino as usual and upload the sketch
 
 ### Visual Software
-For passing the g_code designs to the printer via serial, I use GrblController. It's pretty much a deprecated project now and it's a bit tough to find online so I'm going to leave the two built versions that I use here (`GrblController.app and GrblController2.app`). There are only a few settings to tweak here that I will update later.
+For passing the g_code designs to the printer via serial, I use GrblController. It's pretty much an archived project now and it's a bit tough to find online so I'm going to leave the two built versions that I use here (`GrblController.app and GrblController2.app`). There are only a few settings to tweak here that I will update later.
