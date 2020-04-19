@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+  then
+    echo "No arguments supplied\n"
+    echo "Please input the g_code file you need converted: \n"
+    read GCODE_FILE
+  else
+  	GCODE_FILE=$1
+fi
+
+echo "Cleaning $GCODE_FILE . . .\n"
+echo "Expecting RepRap g_code flavour"
+
+sed -i '' 's/G1/G01/g' $GCODE_FILE
+sed -i '' 's/E0/M05/g' $GCODE_FILE
+sed -i '' 's/E.*/M03/g' $GCODE_FILE
+sed -i '' 's/X-/X/g' $GCODE_FILE
+sed -i '' 's/X/X-/g' $GCODE_FILE 
+sed -i '' 's/Z-/Z/g' $GCODE_FILE
+sed -i '' 's/Z/Z-/g' $GCODE_FILE 
+
+echo "Fixed the g_code to match Andrew's upcycled printer\n"
+echo "Done."
