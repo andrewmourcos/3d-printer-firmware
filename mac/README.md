@@ -41,6 +41,8 @@ Eventually, I'll upload a settings file here for anyone to replicate my setup.
 4. Export g_code
 5. Run my script: `gcode_parser` to correct small g_code commands that are different on my printer
 6. Open the new g_code file in GrblController
+7. Use the command `S1000` in GrblController to set the "spindle" speed to max
+8. Hit `spindle on`, pause, then `spindle off` (this starts heating the 3d pen)
 
 ### gcode_parser script
 Run it with:

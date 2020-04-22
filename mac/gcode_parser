@@ -13,7 +13,12 @@ echo "Cleaning $GCODE_FILE . . .\n"
 echo "Expecting RepRap g_code flavour"
 
 sed -i '' 's/G1/G01/g' $GCODE_FILE
-sed -i '' 's/E0/M05/g' $GCODE_FILE
+
+# sed -i '' 's/E0/M05/g' $GCODE_FILE
+
+sed -i '' 's/G92 E0/M05/g' $GCODE_FILE
+
+
 sed -i '' 's/E.*/M03/g' $GCODE_FILE
 sed -i '' 's/X-/X/g' $GCODE_FILE
 sed -i '' 's/X/X-/g' $GCODE_FILE 
